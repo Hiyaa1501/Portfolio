@@ -6,11 +6,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700; /* bold */
+}
+
+p {
+    font-weight: 400; /* normal */
 }
 
 header {
