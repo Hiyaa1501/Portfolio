@@ -97,3 +97,47 @@ button {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;       
+    flex-wrap: wrap;  
+    padding: 60px 10%;
+}
+
+
+.profile-pic {
+    width: 180px;                
+    height: 180px;
+    object-fit: cover;           
+    border-radius: 50%;          
+    border: 4px solid var(--accent-color); 
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); 
+    cursor: pointer;             popup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.profile-pic:hover {
+    transform: scale(1.05);       
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
+
+.about-text {
+    max-width: 600px;            
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
